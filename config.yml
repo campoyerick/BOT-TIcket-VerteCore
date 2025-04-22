@@ -1,0 +1,46 @@
+token: "token"
+clientId: "1311044849293852785" 
+guildId: "1304720018839437332"  
+ascii: |
+  
+  ██    ██ ████████ ██   ██ 
+  ██    ██    ██     ██ ██  
+  ██    ██    ██      ███   
+   ██  ██     ██     ██ ██  
+    ████      ██    ██   ██ 
+
+status: "online" ## dnd(não pertube), idle
+mysql:
+  host: "localhost"
+  user: "root"
+  password: ""
+  database: "discord_bot"
+
+
+ticket_system:
+  buttons:
+    - name: "⚒️ Suporte Técnico"
+      style: "Secondary" # Tipos: Primary (azul), Secondary (cinza), Success (verde), Danger (vermelho)
+      category: "1311063705731203232"
+      role: "123456789012345678"
+    - name: "⛔ Reportar Problema"
+      style: "Danger"
+      category: "1311063743362236498"
+      role: "876543210987654321" 
+
+  embed:
+    title: "Bem-vindo(a) ao sistema de suporte!"
+    description: "O atendimento é uma forma de você se comunicar com nossa equipe de forma totalmente **PRIVADA**, você irá ter um canal somente seu para tirar suas dúvidas e arrumar seus problemas.\n⏰ **Horário:**\nDas 08:00 as 12:00 & Das 13:30 as 18:30 BR\n🌐 **Nosso website:**\nhttps://www.vertexcore.cloud/"
+    footer: "Atendimento feito por VertexCore"
+    color: "#03a8f8"
+    fields:
+      - name: "📞 Tickets atendidos:"
+        value: "0"
+        inline: false
+
+  ticket_message:
+    title: "📞 Ticket"
+    description: "> Agradecemos por entrar em contato com o suporte.\n > Descreva seu problema e aguarde uma resposta."
+    reason_label: "📃 Motivo"
+    footer: "Atendimento feito por VertexCore"
+    color: "#03a8f8"
